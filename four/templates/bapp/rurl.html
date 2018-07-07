@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Relative Url Template</title>
+  </head>
+  <body>
+    <h1>Welcome to Relative Url Template</h1>
+    <a href="{% url 'blah:other' %}">The other page</a>
+    <a href="{% url 'admin:index' %}">Admin</a>
+    <a href="{% url 'index' %}">to index</a>
+  </body>
+</html>
